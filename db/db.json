@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "3cf3",
+      "name": "Tracy Miranja",
+      "email": "barazatracy44@gmail.com",
+      "password": "tracy123"
+    },
+    {
+      "id": "8f3f",
+      "name": "shaline kahveri",
+      "email": "shalinekahveri@gmail.com",
+      "password": "ttest123"
+    }
+  ]
+}
