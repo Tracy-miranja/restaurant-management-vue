@@ -11,6 +11,7 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
   name: "SignUp",
   data() {
@@ -21,8 +22,16 @@ export default {
     };
   },
   methods: {
-    signUp() {
-      console.warn("you clicked", this.email, this.name);
+    async signUp() {
+      let result = await axios.post("http://localhost:3000/users", {
+        name: this.name,
+        email: this.email,
+        password: this.password,
+      });
+      if (result.status === 201) {
+        alert("account created");
+        localStorage.setItem("user info", JSON.stringify(result));
+      }
     },
   },
 };
