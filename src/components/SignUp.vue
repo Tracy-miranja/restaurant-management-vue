@@ -3,16 +3,28 @@
     <img class="logo" src="../assets/resto-logo.png" alt="web development" />
     <h1>SignUp</h1>
     <div class="register">
-      <input type="text" placeholder="Enter name" />
-      <input type="email" placeholder="Enter email" />
-      <input type="password" placeholder="Enter password" />
-      <button>SignUp</button>
+      <input v-model="name" type="text" placeholder="Enter name" />
+      <input v-model="email" type="email" placeholder="Enter email" />
+      <input v-model="password" type="password" placeholder="Enter password" />
+      <button v-on:click="signUp">SignUp</button>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "SignUp",
+  data() {
+    return {
+      name: "",
+      email: "",
+      password: "",
+    };
+  },
+  methods: {
+    signUp() {
+      console.warn("you clicked", this.email, this.name);
+    },
+  },
 };
 </script>
 <style scoped>
