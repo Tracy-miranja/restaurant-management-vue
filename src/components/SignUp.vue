@@ -8,10 +8,12 @@
       <input v-model="password" type="password" placeholder="Enter password" />
       <button v-on:click="signUp">SignUp</button>
     </div>
+    <h6>Already sign up? <a href="Login">Login in</a></h6>
   </div>
 </template>
 <script>
 import axios from "axios";
+// import Home from "./Home.vue";
 export default {
   name: "SignUp",
   data() {
@@ -29,10 +31,16 @@ export default {
         password: this.password,
       });
       if (result.status === 201) {
-        alert("account created");
         localStorage.setItem("user info", JSON.stringify(result));
+        this.$router.push({ name: "Home" });
       }
     },
+  },
+  mounted() {
+    let user = localStorage.getItem("user info");
+    if (user) {
+      this.$router.push({ name: "Home" });
+    }
   },
 };
 </script>
