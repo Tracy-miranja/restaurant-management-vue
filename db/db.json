@@ -77,6 +77,36 @@
       "name": "grace",
       "email": "grace@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "a4fe",
+      "name": "grace",
+      "email": "grace@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "221e",
+      "name": "brenda",
+      "email": "brenda@gmail.com",
+      "password": "brenda1234"
+    },
+    {
+      "id": "e174",
+      "name": "wairimu",
+      "email": "wairimu@gmail.com",
+      "password": "wairimu123"
+    },
+    {
+      "id": "0d3e",
+      "name": "njuguna",
+      "email": "njuguna@gmail.com",
+      "password": "njuguna123"
+    },
+    {
+      "id": "e2de",
+      "name": "",
+      "email": "",
+      "password": ""
     }
   ]
 }
